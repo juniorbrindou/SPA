@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './Components/menu/menu.component';
 import { UtilisateursComponent } from './Components/utilisateurs/utilisateurs.component';
+import { AccueilComponent } from './Components/accueil/accueil.component';
 
 
 const appRoutes: Routes = [
   {path: 'utilisateurs', component:UtilisateursComponent},
+  {path: '', component:AccueilComponent},
 ];
 
 
@@ -18,6 +20,7 @@ const appRoutes: Routes = [
     AppComponent,
     MenuComponent,
     UtilisateursComponent,
+    AccueilComponent,
   ],
   imports: [
     BrowserModule,
