@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './Components/menu/menu.component';
+import { UtilisateursComponent } from './Components/utilisateurs/utilisateurs.component';
+
 
 const appRoutes: Routes = [
-  // {path:}
+  {path: 'utilisateurs', component:UtilisateursComponent},
 ];
 
 
@@ -15,6 +17,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     MenuComponent,
+    UtilisateursComponent,
   ],
   imports: [
     BrowserModule,
