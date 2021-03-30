@@ -7,10 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './Components/menu/menu.component';
 import { UtilisateursComponent } from './Components/utilisateurs/utilisateurs.component';
 import { AccueilComponent } from './Components/accueil/accueil.component';
+import { UtilisateurComponent } from './Components/utilisateur/utilisateur.component';
+import { UtilisateurService } from './Services/utilisateur.service';
 
 
 const appRoutes: Routes = [
   {path: 'utilisateurs', component:UtilisateursComponent},
+  {path: 'utilisateurs/:id', component:UtilisateurComponent},
   {path: '', component:AccueilComponent},
 ];
 
@@ -21,6 +24,7 @@ const appRoutes: Routes = [
     MenuComponent,
     UtilisateursComponent,
     AccueilComponent,
+    UtilisateurComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    UtilisateurService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
