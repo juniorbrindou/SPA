@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UtilisateurComponent } from './Components/utilisateur/utilisateur.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './Components/menu/menu.component';
 
 const appRoutes: Routes = [
-  { path: '', component:UtilisateurComponent}
+  // {path:}
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UtilisateurComponent,
-    NavbarComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
