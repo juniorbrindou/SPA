@@ -7049,3 +7049,33 @@ a.list-group-item-danger.active:focus {
 .popover {
   color: #555555;
 }
+
+/* perso */
+
+.mb-1 {
+  margin-bottom: 0.3rem
+}
+.mb-2 {
+  margin-bottom: 0.7rem
+}
+.mb-3 {
+  margin-bottom: 0.9rem
+}.mb-4 {
+  margin-bottom: 1.1rem
+}.mb-5 {
+  margin-bottom: 1.4rem
+}
+
+.mt-1 {
+  margin-top: 0.3rem
+}
+.mt-2 {
+  margin-top: 0.7rem
+}
+.mt-3 {
+  margin-top: 0.9rem
+}.mt-4 {
+  margin-top: 1.1rem
+}.mt-5 {
+  margin-top: 1.4rem
+}
