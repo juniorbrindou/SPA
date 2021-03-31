@@ -9,6 +9,7 @@ import { UtilisateursComponent } from './Components/utilisateurs/utilisateurs.co
 import { AccueilComponent } from './Components/accueil/accueil.component';
 import { UtilisateurComponent } from './Components/utilisateur/utilisateur.component';
 import { UtilisateurService } from './Services/utilisateur.service';
+import { AuthComponentComponent } from './Components/auth-component/auth-component.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
     UtilisateursComponent,
     AccueilComponent,
     UtilisateurComponent,
+    AuthComponentComponent,
   ],
   imports: [
     BrowserModule,

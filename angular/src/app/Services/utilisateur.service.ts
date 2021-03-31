@@ -4,13 +4,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UtilisateurService {
-  isAuth = false;
-  constructor(private UtilisateurService: UtilisateurService) {
-    setTimeout(
-      () => {
-        this.isAuth = true;
-      }, 4000
-    );
-  }
+  utilisateurs = [
+    {
+      name: 'Bernard',
+      email: 'bernard@gmail.com'
+    },
+    {
+      name: 'Franck',
+      email: 'franck@gmail.com'
+    },
+    {
+      name: 'Roland',
+      email: 'roland@gmail.com'
+    },
 
+  ];
 }
