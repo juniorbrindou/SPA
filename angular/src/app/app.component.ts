@@ -8,7 +8,7 @@ import { UtilisateurService } from './Services/utilisateur.service';
 })
 export class AppComponent {
   isAuth = false;
-  utilisateurs: any[];
+  utilisateurs!: any[];
   title = 'SPA';
   constructor (private UtilisateurService: UtilisateurService){
     setTimeout(
